@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
 
-	"name": "Просмотр статей habrahabr.ru из черновиков",
+	"name": "Статьи из черновиков habrahabr.ru",
 	"description": "Возможность смотреть статьи, спрятанные в черновики",
-	"version": "1.0",
+	"version": "1.0.1",
 
 	"background":
 	{
