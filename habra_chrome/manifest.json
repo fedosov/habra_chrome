@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+
+	"name": "Просмотр статей habrahabr.ru из черновиков",
+	"description": "Возможность смотреть статьи, спрятанные в черновики",
+	"version": "1.0",
+
+	"background":
+	{
+		"scripts": ["assets/javascripts/background.js"]
+	},
+
+	"content_scripts":
+	[
+		{
+			"matches": ["http://habrahabr.ru/post/*"],
+			"js": ["assets/javascripts/habra_chrome.js"],
+			"run_at": "document_end"
+		}
+	]
+}
