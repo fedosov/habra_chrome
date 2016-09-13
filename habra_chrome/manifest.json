@@ -3,17 +3,12 @@
 
 	"name": "Статьи из черновиков habrahabr.ru",
 	"description": "Возможность смотреть статьи, спрятанные в черновики",
-	"version": "1.0.1",
-
-	"background":
-	{
-		"scripts": ["assets/javascripts/background.js"]
-	},
+	"version": "1.0.2",
 
 	"content_scripts":
 	[
 		{
-			"matches": ["http://habrahabr.ru/post/*"],
+			"matches": ["https://habrahabr.ru/post/*"],
 			"js": ["assets/javascripts/habra_chrome.js"],
 			"run_at": "document_end"
 		}
