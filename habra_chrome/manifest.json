@@ -1,14 +1,14 @@
 {
 	"manifest_version": 2,
 
-	"name": "Статьи из черновиков habrahabr.ru",
+	"name": "Статьи из черновиков habr.com",
 	"description": "Возможность смотреть статьи, спрятанные в черновики",
 	"version": "1.0.2",
 
 	"content_scripts":
 	[
 		{
-			"matches": ["https://habrahabr.ru/post/*"],
+			"matches": ["https://habr.com/*/post/*"],
 			"js": ["assets/javascripts/habra_chrome.js"],
 			"run_at": "document_end"
 		}
